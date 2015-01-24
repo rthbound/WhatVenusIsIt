@@ -1,5 +1,16 @@
 function updateScreen() {
 	var d  = new Date();
+  var utc = new Date(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(),  d.getUTCHours(), d.getUTCMinutes(), d.getUTCSeconds());
+
+  // Get date information
+  var ddUtc = utc.getDate();
+  var moUtc = utc.getMonth() + 1; // Jan == 0
+  var yrUtc = utc.getFullYear();
+
+  // Get time information
+	var hUtc  = utc.getHours();
+	var mmUtc = utc.getMinutes();
+	var sUtc  = utc.getSeconds();
 
   // Get date information
   var dd = d.getDate();
@@ -20,7 +31,11 @@ function updateScreen() {
   // Build date and time strings
   var date = mo + "/" + dd + "/" + yr;
   var time = h  + ":" + mm;
-  var imagestring = "url(http://api.usno.navy.mil/imagery/earth.png?view=full&date=" + date + "&time=" + time + ")";
+
+  var utcDate = moUtc + "/" + ddUtc + "/" + yrUtc;
+  var utcTime = hUtc + ":" + mmUtc;
+
+  var imagestring = "url(http://api.usno.navy.mil/imagery/earth.png?view=full&date=" + utcDate + "&time=" + utcTime + ")";
   // Update the background image if the minute has changed
   breakable: if (!~document.getElementById("time").innerHTML.indexOf(time)){
 
