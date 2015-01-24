@@ -28,6 +28,11 @@ function updateScreen() {
 	if (mm < 10) { mm = "0" + mm };
 	if (s  < 10) { s  = "0" + s  };
 
+  if (ddUtc < 10) { ddUtc = "0" + ddUtc };
+  if (moUtc < 10) { moUtc = "0" + moUtc };
+	if (mmUtc < 10) { mmUtc = "0" + mmUtc };
+	if (sUtc  < 10) { sUtc  = "0" + sUtc  };
+
   // Build date and time strings
   var date = mo + "/" + dd + "/" + yr;
   var time = h  + ":" + mm;
