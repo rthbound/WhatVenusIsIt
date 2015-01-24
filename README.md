@@ -1,5 +1,5 @@
-# What Color Is It
+# What Earth Is It
 More information will follow soon!
 
 ## License
-[MIT License](https://github.com/MarvinMenzerath/WhatColorIsIt/blob/gh-pages/LICENSE)
+[MIT License](https://github.com/rthbound/WhatEarthIsIt/blob/gh-pages/LICENSE)
