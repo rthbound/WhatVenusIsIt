@@ -5,6 +5,9 @@ body {
 }
 
 #image, #next-image {
+  background-size: contain;
+  background-position: 50% 40%;
+  background-repeat-y: no-repeat;
   position: fixed;
   height: 100%;
   width: 100%;

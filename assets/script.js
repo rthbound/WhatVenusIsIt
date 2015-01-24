@@ -43,7 +43,6 @@ function updateScreen() {
   var imagestring = "url(http://api.usno.navy.mil/imagery/earth.png?view=full&date=" + utcDate + "&time=" + utcTime + ")";
   // Update the background image if the minute has changed
   breakable: if (!~document.getElementById("time").innerHTML.indexOf(time)){
-
     // Set a background image if there is none set
     if(document.getElementById("image").style.backgroundImage == document.getElementById("next-image").style.backgroundImage) {
       document.getElementById("image").style.backgroundImage=imagestring;
@@ -73,11 +72,12 @@ function updateScreen() {
     }
   }
 
-	document.getElementById("time").innerHTML = ("<p>" + date + "</p><p>" + time + ":" + s + "</p>");
+	document.getElementById("time").innerHTML = (date + "<br/>" + time + ":" + s);
 
   // Pay homage to WhatColorIsIt
   if (h < 10) { h = "0" + h }
   document.getElementById("time").style.color = "#" + h + mm + s;
+  document.body.style.backgroundColor = "#" + h + mm + s;
 
 	// Check Fullscreen-Mode
 	if (Math.abs(screen.height - window.innerHeight) < 50 && Math.abs(screen.width - window.innerWidth) < 10) {
