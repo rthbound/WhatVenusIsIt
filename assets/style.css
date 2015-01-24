@@ -1,9 +1,15 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400);
-
 body {
 	margin: 0;
 	padding: 0;
 	transition: all 0.8s;
+}
+
+#image, #next-image {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 h1, h2 {
@@ -23,6 +29,7 @@ h2 {
 }
 
 .centered {
+  z-index: 1000;
 	position: fixed;
 	top: 40%;
 	left: 50%;
@@ -35,6 +42,7 @@ h2 {
 
 #github-badge {
 	position: absolute;
+  z-index: 1000;
 	top: 0;
 	right: 0;
 	border: 0;
