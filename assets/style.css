@@ -61,3 +61,29 @@ h2 {
 		font-size: 1.5em;
 	}
 }
+.pull-left, .pull-right {
+  z-index: 1000;
+  position: fixed;
+  top: 92%;
+}
+
+.pull-left {
+  left: 27%;
+}
+
+.pull-right {
+  right: 27%;
+}
+
+@media (max-width: 761px) {
+  .pull-left, .pull-right {
+    top: 75%;
+  }
+  .pull-left {
+    left: 4%;
+  }
+
+  .pull-right {
+    right: 4%;
+  }
+}

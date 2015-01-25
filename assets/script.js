@@ -72,7 +72,7 @@ function updateScreen() {
     }
   }
 
-	document.getElementById("time").innerHTML = (date + "<br/>" + time + ":" + s);
+	document.getElementById("time").innerHTML = ("<div class=pull-left>" + date + "</div><div class=pull-right>" + time + ":" + s + "</div>");
 
   // Pay homage to WhatColorIsIt
   if (h < 10) { h = "0" + h }
