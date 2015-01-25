@@ -40,7 +40,7 @@ function updateScreen() {
   var utcDate = moUtc + "/" + ddUtc + "/" + yrUtc;
   var utcTime = hUtc + ":" + mmUtc;
 
-  var imagestring = "url(http://api.usno.navy.mil/imagery/earth.png?view=full&date=" + utcDate + "&time=" + utcTime + ")";
+  var imagestring = "url(http://api.usno.navy.mil/imagery/moon.png?view=full&date=" + utcDate + "&time=" + utcTime + ")";
   // Update the background image if the minute has changed
   breakable: if (!~document.getElementById("time").innerHTML.indexOf(time)){
     // Set a background image if there is none set
@@ -50,7 +50,7 @@ function updateScreen() {
       break breakable;
     }
 
-    if(~document.getElementById("image").style.backgroundImage.indexOf("earth")){
+    if(~document.getElementById("image").style.backgroundImage.indexOf("moon)){
       document.getElementById("next-image").style.zIndex = "0"
       document.getElementById("next-image").style.backgroundImage=imagestring
 
