@@ -50,7 +50,7 @@ function updateScreen() {
       break breakable;
     }
 
-    if(~document.getElementById("image").style.backgroundImage.indexOf("moon)){
+    if(~document.getElementById("image").style.backgroundImage.indexOf("moon")){
       document.getElementById("next-image").style.zIndex = "0"
       document.getElementById("next-image").style.backgroundImage=imagestring
 
