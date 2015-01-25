@@ -7,8 +7,7 @@ body {
 #image, #next-image {
   background-size: contain;
   background-position: 50% 40%;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
+  background-repeat: no-repeat no-repeat;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -68,11 +67,11 @@ h2 {
 }
 
 .pull-left {
-  left: 27%;
+  left: 30%;
 }
 
 .pull-right {
-  right: 27%;
+  right: 30%;
 }
 
 @media (max-width: 761px) {
