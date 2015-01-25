@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	transition: all 15s;
+	transition: all 10s;
 }
 
 #image, #next-image {
@@ -31,14 +31,6 @@ h2 {
 	font-size: 2.5em;
 }
 
-.centered {
-  z-index: 1000;
-	position: fixed;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 #hex {
 	padding-top: 45%;
 }
@@ -59,4 +51,25 @@ h2 {
 	h2 {
 		font-size: 1.5em;
 	}
+}
+
+
+.pull-left, .pull-right {
+  z-index: 1000;
+  position: fixed;
+  top: 92%;
+}
+
+.pull-left {
+  left: 15%;
+}
+
+.pull-right {
+  right: 15%;
+}
+
+@media (max-width: 761px) {
+  .pull-left, .pull-right {
+    top: 55%;
+  }
 }
